@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TheHangman</name>
+    </assembly>
+    <members>
+        <member name="T:TP01.Hangman">
+            <summary>
+                Represents the hangman game
+            </summary>
+        </member>
+        <member name="M:TP01.Hangman.#ctor(TP01.WordBase,System.Int32,System.Int32)">
+            <summary>
+                Init the game
+            </summary>
+            <param name="words">the words base (all the possible words)</param>
+            <param name="minLength">The minimum word length (default 4)</param>
+            <param name="maxLength">The maximum word lenth (default 10)</param>
+        </member>
+        <member name="M:TP01.Hangman.StartGame">
+            <summary>
+                start a new game : change the word to find, reset the errors counter, etc.
+            </summary>
+        </member>
+        <member name="P:TP01.Hangman.HiddenWord">
+            <summary>
+                Gets the hidden word (the word to find)
+            </summary>
+        </member>
+        <member name="P:TP01.Hangman.PartialWord">
+            <summary>
+                Gets the partial word (the unknown letters are replaced with _)
+            </summary>
+        </member>
+        <member name="P:TP01.Hangman.Errors">
+            <summary>
+                Gets the number of errors
+            </summary>
+        </member>
+        <member name="M:TP01.Hangman.Propose(System.Char)">
+            <summary>
+                The player propose a letter. The number of errors is updated, and PartialWord too.
+                If the letter is already proposed, nothing happens.
+            </summary>
+        </member>
+        <member name="P:TP01.Hangman.IsGameWon">
+            <summary>
+                Tells if the player wins the game
+            </summary>
+        </member>
+        <member name="P:TP01.Hangman.IsGameLost">
+            <summary>
+                Tells if the player lost the game
+            </summary>
+        </member>
+        <member name="P:TP01.Hangman.LettersProposed">
+            <summary>
+                Gets all the proposed letters
+            </summary>
+        </member>
+        <member name="T:TP01.WordBase">
+            <summary>
+                This class represents the word base, taken from a text file
+            </summary>
+        </member>
+        <member name="M:TP01.WordBase.#ctor(System.IO.Stream)">
+            <summary>
+                Init the database
+            </summary>
+            <param name="theStream">The input stream to read the words</param>
+        </member>
+        <member name="M:TP01.WordBase.GetAWord">
+            <summary>
+                Get a word, randomly
+            </summary>
+            <returns>a word</returns>
+        </member>
+        <member name="M:TP01.WordBase.GetAWord(System.Int32,System.Int32)">
+            <summary>
+                Get a word, randomly
+            </summary>
+            <param name="minSize">the minimal number of letters of the word</param>
+            <param name="maxSize">the maximal number of letters of the word</param>
+            <returns>a word</returns>
+        </member>
+    </members>
+</doc>
