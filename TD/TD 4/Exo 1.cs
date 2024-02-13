@@ -1,18 +1,18 @@
 ﻿namespace R2._01.TD.TD_4;
 
-public class Exo_1
+public class Exo1
 {
     public class Category
     {
         private List<Product> _products;
-
-        public List<Product> Products => _products;
 
         public Category(string name)
         {
             Name = name;
             _products = new List<Product>();
         }
+
+        public List<Product> Products => _products;
 
         public string Name { get; set; }
     }
@@ -22,16 +22,16 @@ public class Exo_1
         private Category _category;
         private string _name;
 
-        public string Name
-        {
-            get => _name;
-            set => _name = value;
-        }
-
         public Product(Category category, string name)
         {
             _category = category;
             Name = name;
+        }
+
+        public string Name
+        {
+            get => _name;
+            set => _name = value;
         }
     }
 
@@ -46,7 +46,7 @@ public class Exo_1
 
         public void AddProduct(Product p)
         {
-            _products.Insert(_products.Count, p);
+            _products.Add(p);
         }
 
         public void RemoveProduct(Product p)
