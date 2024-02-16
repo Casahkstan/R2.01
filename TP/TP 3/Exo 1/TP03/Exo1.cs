@@ -4,7 +4,7 @@ namespace R2._01.TP.TP_3.Exo_1.TP03;
 
 class Program
 {
-    public static int Main()
+    public static int Exo_1()
     {
         Product.VAT = 0.2f;
         Product sp01 = new Product("SP01", "Smarphone FaitIUT 0121", 250);

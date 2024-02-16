@@ -4,7 +4,7 @@ namespace R2._01.TP.TP_3.Exo2.Exo2
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Exo_2(string[] args)
         {
             // Test de l'heure
             Time t1 = new Time(0);

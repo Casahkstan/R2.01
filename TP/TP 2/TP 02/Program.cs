@@ -6,7 +6,7 @@ namespace R2._01.TP.TP_2.TP_02;
 
 partial class Program
 {
-    public static int Main()
+    public static int Exo_1()
     {
         Test2();
         return 0;

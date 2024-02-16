@@ -1,3 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿namespace R2._01;
 
-Console.WriteLine("Hello, World!");
+class Program
+{
+    public static int Main()
+    {
+        return 0;
+    }
+}

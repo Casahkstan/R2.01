@@ -4,6 +4,7 @@ public class Exo1
 {
     public class Category
     {
+        private string _name;
         private List<Product> _products;
 
         public Category(string name)
@@ -14,18 +15,45 @@ public class Exo1
 
         public List<Product> Products => _products;
 
-        public string Name { get; set; }
+        public string Name
+        {
+            get => _name;
+            set => _name = value;
+        }
+
+        public void AddProduct(Product p)
+        {
+            _products.Add(p);
+        }
+
+        public void RemoveProduct(Product p)
+        {
+            _products.Remove(p);
+        }
     }
 
     public class Product
     {
         private Category _category;
+
         private string _name;
 
         public Product(Category category, string name)
         {
-            _category = category;
+            Category = category;
+            category.AddProduct(this);
             Name = name;
+        }
+
+        public Category Category
+        {
+            get => _category;
+            set
+            {
+                _category.RemoveProduct(this);
+                _category = value;
+                _category.AddProduct(this);
+            }
         }
 
         public string Name

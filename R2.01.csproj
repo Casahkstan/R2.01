@@ -9,12 +9,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="TD\TD 1\" />
-      <Folder Include="TD\TD 2\" />
       <Folder Include="TD\TD 3\" />
       <Folder Include="TD\TD 5\" />
         <Folder Include="TP\TP 3\Exo2\.vs\Exo2\FileContentIndex\merges\"/>
-      <Folder Include="TP\TP 4\" />
+        <Folder Include="TP\TP 4\"/>
       <Folder Include="TP\TP 5\" />
       <Folder Include="TP\TP 6\" />
     </ItemGroup>

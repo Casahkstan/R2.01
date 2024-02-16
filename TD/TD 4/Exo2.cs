@@ -18,11 +18,6 @@ public class Exo2
     {
         private Instrument _instrument;
 
-        public Musician()
-        {
-            Instrument = new Instrument("");
-        }
-
         public Musician(Instrument instrument)
         {
             Instrument = instrument;

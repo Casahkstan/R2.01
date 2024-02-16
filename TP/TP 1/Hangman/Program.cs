@@ -124,7 +124,7 @@ namespace TheHangman
             Console.WriteLine("============____________________________");
         }
 
-        static void Main()
+        static void Hangman()
         {
             Assembly ass = typeof(Program).GetTypeInfo().Assembly;
             Stream stream = ass.GetManifestResourceStream("TheHangman.dico.txt");

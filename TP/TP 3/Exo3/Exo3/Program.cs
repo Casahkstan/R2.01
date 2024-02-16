@@ -4,7 +4,7 @@ namespace R2._01.TP.TP_3.Exo3.Exo3
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Exo_3(string[] args)
         {
             Fraction f1 = new Fraction(5, 3);
             Fraction f2 = new Fraction(2, 7);
